@@ -1,3 +1,2 @@
-Plāns ir izveidot kādai spēlei macro balstoties uz image recognition
-lai spēlē veiktu automātiski funkcijas ( ja tas vispār pythonā
-ir iespējams )
+Plāns ir izveidot word guesser spēli
+Kodu pašam nerakstīt, bet atrast internetā un papildināt 

@@ -1,0 +1,115 @@
+DEBUG 2021-10-05 15:43:42,209 - Test debug message.
+INFO 2021-10-05 21:45:31,169 - test
+INFO 2021-10-05 21:47:39,698 - Player has chosen 10 lives
+INFO 2021-10-05 21:48:21,046 - Player has chosen 2 lives
+INFO 2021-10-05 21:55:43,281 - Player has chosen 10 lives
+INFO 2021-10-05 21:55:43,282 - Random word has been chosen, it is vanna
+INFO 2021-10-05 21:55:43,282 - Word has been encoded with lines
+INFO 2021-10-05 21:55:46,417 - Wrong letter guessed,9 lives remaining
+INFO 2021-10-05 21:55:48,753 - The guessed letter has been decoded
+INFO 2021-10-05 21:55:48,753 - The guessed letter has been decoded
+INFO 2021-10-05 21:55:48,754 - Right letter guessed,9 lives remaining
+INFO 2021-10-05 21:55:50,431 - Wrong letter guessed,8 lives remaining
+INFO 2021-10-05 21:55:53,548 - Wrong letter guessed,7 lives remaining
+INFO 2021-10-05 21:55:55,234 - Wrong letter guessed,6 lives remaining
+INFO 2021-10-05 21:55:56,205 - Wrong letter guessed,5 lives remaining
+INFO 2021-10-05 21:55:56,738 - Wrong letter guessed,4 lives remaining
+INFO 2021-10-05 21:55:58,603 - Wrong letter guessed,3 lives remaining
+INFO 2021-10-05 21:55:59,353 - Wrong letter guessed,2 lives remaining
+INFO 2021-10-05 21:55:59,642 - Wrong letter guessed,1 lives remaining
+INFO 2021-10-05 21:55:59,939 - The game has ended. Player did not guess the word and lost.
+INFO 2021-10-05 22:05:46,347 - Player has chosen 10 lives
+INFO 2021-10-05 22:05:46,348 - Random word has been chosen, it is teātris
+INFO 2021-10-05 22:05:46,349 - Word has been encoded with lines
+INFO 2021-10-05 22:06:04,156 - Wrong letter guessed,9 lives remaining
+INFO 2021-10-05 22:06:05,108 - The guessed letter has been decoded
+INFO 2021-10-05 22:06:05,109 - Right letter guessed,9 lives remaining
+INFO 2021-10-05 22:06:09,052 - Wrong letter guessed,8 lives remaining
+INFO 2021-10-05 22:06:12,531 - Wrong letter guessed,7 lives remaining
+INFO 2021-10-05 22:06:13,251 - Wrong letter guessed,6 lives remaining
+INFO 2021-10-05 22:06:13,830 - Wrong letter guessed,5 lives remaining
+INFO 2021-10-05 22:06:18,528 - Wrong letter guessed,4 lives remaining
+INFO 2021-10-05 22:06:19,181 - Wrong letter guessed,3 lives remaining
+INFO 2021-10-05 22:06:19,847 - The guessed letter has been decoded
+INFO 2021-10-05 22:06:19,848 - Right letter guessed,3 lives remaining
+INFO 2021-10-05 22:06:20,655 - The guessed letter has been decoded
+INFO 2021-10-05 22:06:20,656 - Right letter guessed,3 lives remaining
+INFO 2021-10-05 22:06:26,065 - The guessed letter has been decoded
+INFO 2021-10-05 22:06:26,066 - The guessed letter has been decoded
+INFO 2021-10-05 22:06:26,066 - Right letter guessed,3 lives remaining
+INFO 2021-10-05 22:06:27,691 - The guessed letter has been decoded
+INFO 2021-10-05 22:06:27,692 - Game has ended. Player guessed 'teātris' with 3 lives left.
+DEBUG 2021-10-05 22:07:28,792 - Player did make a valid input, therefore 10 lives was chosen by default
+INFO 2021-10-05 22:07:28,792 - Random word has been chosen, it is krusts
+INFO 2021-10-05 22:07:28,792 - Word has been encoded with lines
+INFO 2021-10-05 22:13:02,026 - Wrong letter guessed,9 lives remaining
+INFO 2021-10-05 22:13:02,201 - Wrong letter guessed,8 lives remaining
+INFO 2021-10-05 22:13:02,375 - Wrong letter guessed,7 lives remaining
+INFO 2021-10-05 22:13:02,543 - Wrong letter guessed,6 lives remaining
+INFO 2021-10-05 22:13:02,718 - Wrong letter guessed,5 lives remaining
+INFO 2021-10-05 22:13:02,899 - Wrong letter guessed,4 lives remaining
+INFO 2021-10-05 22:13:03,060 - Wrong letter guessed,3 lives remaining
+INFO 2021-10-05 22:13:03,212 - Wrong letter guessed,2 lives remaining
+INFO 2021-10-05 22:13:03,383 - Wrong letter guessed,1 lives remaining
+INFO 2021-10-05 22:13:03,536 - The game has ended. Player did not guess the word and lost.
+INFO 2021-10-05 22:13:22,966 - Player has chosen 10 lives
+INFO 2021-10-05 22:13:22,966 - Random word has been chosen, it is trusis
+INFO 2021-10-05 22:13:22,966 - Word has been encoded with lines
+INFO 2021-10-05 22:13:33,158 - Wrong letter guessed,9 lives remaining
+INFO 2021-10-05 22:13:36,926 - Wrong letter guessed,8 lives remaining
+INFO 2021-10-05 22:13:43,153 - Wrong letter guessed,7 lives remaining
+INFO 2021-10-05 22:13:49,167 - Wrong letter guessed,6 lives remaining
+INFO 2021-10-05 22:13:51,623 - Wrong letter guessed,5 lives remaining
+INFO 2021-10-05 22:13:53,348 - Wrong letter guessed,4 lives remaining
+INFO 2021-10-05 22:13:57,351 - The guessed letter has been decoded
+INFO 2021-10-05 22:13:57,352 - Right letter guessed,4 lives remaining
+INFO 2021-10-05 22:14:03,415 - The guessed letter has been decoded
+INFO 2021-10-05 22:14:03,416 - Right letter guessed,4 lives remaining
+INFO 2021-10-05 22:14:45,433 - The guessed letter has been decoded
+INFO 2021-10-05 22:14:45,433 - Right letter guessed,4 lives remaining
+INFO 2021-10-05 22:15:08,913 - The guessed letter has been decoded
+INFO 2021-10-05 22:15:08,913 - Right letter guessed,4 lives remaining
+INFO 2021-10-05 22:15:38,247 - The guessed letter has been decoded
+INFO 2021-10-05 22:15:38,248 - The guessed letter has been decoded
+INFO 2021-10-05 22:15:38,248 - Game has ended. Player guessed 'trusis' with 4 lives left.
+INFO 2021-10-05 22:15:48,705 - Player has chosen 10 lives
+INFO 2021-10-05 22:15:48,705 - Random word has been chosen, it is Auss
+INFO 2021-10-05 22:15:48,705 - Word has been encoded with lines
+INFO 2021-10-05 22:16:04,422 - Wrong letter guessed,9 lives remaining
+INFO 2021-10-05 22:16:10,162 - Wrong letter guessed,8 lives remaining
+INFO 2021-10-05 22:16:14,530 - Wrong letter guessed,7 lives remaining
+INFO 2021-10-05 22:16:22,534 - Wrong letter guessed,6 lives remaining
+INFO 2021-10-05 22:16:25,371 - The guessed letter has been decoded
+INFO 2021-10-05 22:16:25,372 - Right letter guessed,6 lives remaining
+INFO 2021-10-05 22:16:34,065 - Wrong letter guessed,5 lives remaining
+INFO 2021-10-05 22:16:38,036 - Wrong letter guessed,4 lives remaining
+INFO 2021-10-05 22:17:08,062 - Wrong letter guessed,3 lives remaining
+INFO 2021-10-05 22:17:26,801 - The guessed letter has been decoded
+INFO 2021-10-05 22:17:26,802 - The guessed letter has been decoded
+INFO 2021-10-05 22:17:26,802 - Right letter guessed,3 lives remaining
+INFO 2021-10-05 22:18:54,510 - The guessed letter has been decoded
+INFO 2021-10-05 22:18:54,511 - Game has ended. Player guessed 'Auss' with 3 lives left.
+INFO 2021-10-05 22:19:12,622 - Player has chosen 10 lives
+INFO 2021-10-05 22:19:12,623 - Random word has been chosen, it is vējš
+INFO 2021-10-05 22:19:12,623 - Word has been encoded with lines
+INFO 2021-10-05 22:19:29,209 - The guessed letter has been decoded
+INFO 2021-10-05 22:19:29,210 - Right letter guessed,10 lives remaining
+INFO 2021-10-05 22:19:31,816 - The guessed letter has been decoded
+INFO 2021-10-05 22:19:31,816 - Game has ended. Player guessed 'vējš' with 10 lives left.
+INFO 2021-10-05 22:19:37,017 - Player has chosen 10 lives
+INFO 2021-10-05 22:19:37,018 - Random word has been chosen, it is ziema
+INFO 2021-10-05 22:19:37,018 - Word has been encoded with lines
+INFO 2021-10-05 22:20:23,824 - The guessed letter has been decoded
+INFO 2021-10-05 22:20:23,824 - Right letter guessed,10 lives remaining
+INFO 2021-10-05 22:20:27,642 - Wrong letter guessed,9 lives remaining
+INFO 2021-10-05 22:20:29,688 - Wrong letter guessed,8 lives remaining
+INFO 2021-10-05 22:20:31,628 - The guessed letter has been decoded
+INFO 2021-10-05 22:20:31,628 - Right letter guessed,8 lives remaining
+INFO 2021-10-05 22:20:37,113 - Wrong letter guessed,7 lives remaining
+INFO 2021-10-05 22:20:39,255 - The guessed letter has been decoded
+INFO 2021-10-05 22:20:39,255 - Right letter guessed,7 lives remaining
+INFO 2021-10-05 22:21:07,855 - Wrong letter guessed,6 lives remaining
+INFO 2021-10-05 22:21:44,746 - The guessed letter has been decoded
+INFO 2021-10-05 22:21:44,746 - Right letter guessed,6 lives remaining
+INFO 2021-10-05 22:21:44,988 - The guessed letter has been decoded
+INFO 2021-10-05 22:21:44,988 - Game has ended. Player guessed 'ziema' with 6 lives left.
