@@ -7,7 +7,7 @@ import configparser
 import os
 import time
 
-os.chdir(r'C:\Users\marku\Desktop\VA\Python\pytproject')
+os.chdir(os.path.dirname(__file__))
 #from configparser import ConfigParser
 from mysql.connector import Error
 from datetime import datetime
