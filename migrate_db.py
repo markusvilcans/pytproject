@@ -64,7 +64,7 @@ try:
 except Error as e:
     logger.error('Error - could not connect to database')
 
-# Check if table exists
+
 def mysql_check_if_table_exists(table_name):
 	records = []
 	cursor = get_cursor()
@@ -79,7 +79,6 @@ def mysql_check_if_table_exists(table_name):
 		pass
 	return records
 
-# Create migrations table
 def mysql_create_migrations_table():
 	cursor = get_cursor()
 	result = []
@@ -93,7 +92,7 @@ def mysql_create_migrations_table():
 		pass
 	return result
 
-# Check if table exists
+
 def mysql_check_if_migration_exists(migration_f_name):
 	records = []
 	cursor = get_cursor()
@@ -108,7 +107,6 @@ def mysql_check_if_migration_exists(migration_f_name):
 		pass
 	return records[0][0]
 
-# Exec any sql on DB
 def mysql_exec_any_sql(sql_query):
 	cursor = get_cursor()
 	status = 0
@@ -124,7 +122,6 @@ def mysql_exec_any_sql(sql_query):
 		pass
 	return status
 
-# Migration value insert
 def mysql_migration_value_insert(name, exec_ts, exec_dt):
 	cursor = get_cursor()
 	try:
@@ -142,14 +139,13 @@ else:
 	logger.info("Migrations table exists")
 
 migrations_list = []
-# Reading all migration file names into an array
+
 cur_dir = os. getcwd()
 migrations_files_list = os.listdir(cur_dir + "/migrations/")
 for f_name in migrations_files_list:
 	if f_name.endswith('.sql'):
 		migrations_list.append(f_name)
 
-# Sorting list to be processed in the correct order
 migrations_list.sort(reverse=False)
 
 counter = 0
