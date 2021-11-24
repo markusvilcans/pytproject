@@ -17,7 +17,7 @@ now = datetime.now()
 # dd/mm/YY H:M:S
 dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
 
-
+#Logging configuration
 LOG_FORMAT = "%(levelname)s %(asctime)s - %(message)s"
 logging.basicConfig(filename='log.log',
                     encoding='utf-8',
@@ -25,6 +25,7 @@ logging.basicConfig(filename='log.log',
                     format = LOG_FORMAT)
 logger = logging.getLogger()
 
+#Reading config for mysql
 logging.info('Reading configuration for mysql database')
 try:
     config = configparser.ConfigParser()
@@ -40,6 +41,7 @@ logging.info('DONE')
 connection = None
 connected = False
 
+#Initializing DB - connecting to DB
 def init_db():
     global connection
     connection = mysql.connector.connect(host=mysql_config_mysql_host, database=mysql_config_mysql_db, user=mysql_config_mysql_user, password=mysql_config_mysql_pass)
@@ -65,7 +67,7 @@ except Error as e:
     logger.error('Error - could not connect to database')
 
 
-
+#Inserting results into DB
 def mysql_insert_gameresult_into_db(user_name, dt_string, results, number_of_lives):
     cursor = get_cursor()
     try:
@@ -75,9 +77,6 @@ def mysql_insert_gameresult_into_db(user_name, dt_string, results, number_of_liv
     except Error as e:
         logging.error('Problem inserting values into database.')
         pass
-
-
-
 
 
 # Ievadteksts.

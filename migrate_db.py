@@ -8,7 +8,6 @@ import os
 import time
 
 os.chdir(os.path.dirname(__file__))
-#from configparser import ConfigParser
 from mysql.connector import Error
 from datetime import datetime
 
@@ -17,7 +16,7 @@ now = datetime.now()
 # dd/mm/YY H:M:S
 dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
 
-
+#Logging configuration
 LOG_FORMAT = "%(levelname)s %(asctime)s - %(message)s"
 logging.basicConfig(filename='log.log',
                     encoding='utf-8',
@@ -25,6 +24,7 @@ logging.basicConfig(filename='log.log',
                     format = LOG_FORMAT)
 logger = logging.getLogger()
 
+#Reading config for mysql
 logging.info('Reading configuration for mysql database')
 try:
     config = configparser.ConfigParser()
@@ -40,6 +40,7 @@ logging.info('DONE')
 connection = None
 connected = False
 
+#Initializing DB - connecting to DB
 def init_db():
     global connection
     connection = mysql.connector.connect(host=mysql_config_mysql_host, database=mysql_config_mysql_db, user=mysql_config_mysql_user, password=mysql_config_mysql_pass)
@@ -64,7 +65,7 @@ try:
 except Error as e:
     logger.error('Error - could not connect to database')
 
-
+#Checking if table exists in database
 def mysql_check_if_table_exists(table_name):
 	records = []
 	cursor = get_cursor()
@@ -79,6 +80,7 @@ def mysql_check_if_table_exists(table_name):
 		pass
 	return records
 
+#If table does not exist, creates it
 def mysql_create_migrations_table():
 	cursor = get_cursor()
 	result = []
@@ -92,7 +94,7 @@ def mysql_create_migrations_table():
 		pass
 	return result
 
-
+#Migration checks
 def mysql_check_if_migration_exists(migration_f_name):
 	records = []
 	cursor = get_cursor()
@@ -122,6 +124,7 @@ def mysql_exec_any_sql(sql_query):
 		pass
 	return status
 
+#Inserts values into migration table
 def mysql_migration_value_insert(name, exec_ts, exec_dt):
 	cursor = get_cursor()
 	try:
@@ -133,6 +136,7 @@ def mysql_migration_value_insert(name, exec_ts, exec_dt):
 		logger.error('Problem inserting migration values into DB: ' + str(e))
 		pass
 
+#Creates migration table if does not exist
 if mysql_check_if_table_exists("migrations") == []:
 	mysql_create_migrations_table()
 else:
@@ -150,6 +154,7 @@ migrations_list.sort(reverse=False)
 
 counter = 0
 
+#Executing all migrations 
 for migration in migrations_list:
 	if mysql_check_if_migration_exists(migration) == 0:
 		with open(cur_dir + "/migrations/" + migration,'r') as file:

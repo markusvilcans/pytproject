@@ -26,6 +26,6 @@ print('Checking if words_database.txt file exists in working directory.')
 assert os.path.isfile('words_database.txt') == True
 print('File exists.\n')
 
-print('Checking if worder_db.py file exists in working directory.')
+print('Checking if worker_db.py file exists in working directory.')
 assert os.path.isfile('worker_db.py') == True
 print('File exists.\n')
